@@ -43,7 +43,9 @@ nav {
 .Nav-sty {
   color: #b292ff;
 }
-
+.Nav-sty:hover{
+  color: #FFFFFF;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -54,6 +56,10 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+}
+
+nav a:hover{
+  color: #B292FF;
 }
 
 .nav-img {
@@ -134,75 +140,57 @@ header {
 }
 }
 @media screen and (max-width:600px){
-  nav {
-  gap: 20px;
-}
-.nav-img {
-  gap: 5px;
-}
-}
-@media screen and (max-width:560px){
-  header {
-  width: 80%;
-}
-}
-@media screen and (max-width:540px){
-  header {
-  width: 85%;
-}
-}
-@media screen and (max-width:515px){
-  header {
-  width: 87%;
-}
-}
-@media screen and (max-width:500px){
-  .nav-img img {
-  width: 18px;
-}
-}
-@media screen and (max-width:463px){
-  header {
-  width: 90%;
-}
-}
-@media screen and (max-width:443px){
-  header {
-  width: 95%;
-}
-}
-@media screen and (max-width:423px){
-  header {
-  width: 95%;
-}
-nav {
-  gap: 15px;
-}
-nav ul {
-  gap: 7px;
-}
-}
-@media screen and (max-width:413px){
-nav {
-  gap: 10px;
-}
-nav ul {
-  gap: 7px;
-}
-}
-@media screen and (max-width:400px){
+
 .nav-img img{
   display: none;
 }
+header {
+  width: 58%;
+}
+nav {
+  width: 100%;
+  margin-left: 20px;
+}
+}
+@media screen and (max-width:520px){
+header {
+  width: 60%;
+}
+nav {
+  margin-left: 34px;
+}
+}
+@media screen and (max-width:460px){
+header {
+  width: 70%;
+}
+nav {
+  margin-left: 34px;
+}
 nav ul {
-  gap: 20px;
-  font-size: 17px;
+  gap: 10px;
+  font-size: 15px;
 }
 }
-@media screen and (max-width:322px){
-  header {
-  width: 95%;
-  margin-left: 15px;
+@media screen and (max-width:400px){
+header {
+  width: 75%;
+}
+nav ul {
+  gap: 12px;
+  font-size: 15.5px;
+}
+}
+@media screen and (max-width:360px){
+header {
+  width: 84%;
+}
+
+}
+@media screen and (max-width:310px){
+header {
+  width: 87%;
+  margin-left: 40px;
 }
 }
 
@@ -399,18 +387,222 @@ main {
   width: 52%;
 }
 }
+@media screen and (max-width:637px){
+    .About-Left-Container {
+  width: 55.5%;
+}
+ .ABL-a{
+  gap: 30px;
+}
+.ABL-a #ABL-aside{
+  width: 32%;
+}
+}
+@media screen and (max-width:600px){
+  .About-Right-Container {
+  width: 35%;
+}
+.About-Left-Container h1 {
+  font-size: 39px;
+}
 
+.About-Left-Container p {
+  font-size: 14px;
+}
+.ABL-a{
+  gap: 20px;
+}
+}
+@media screen and (max-width:558px){
+  .About-Left-Container {
+  width: 58%;
+}
+}
+@media screen and (max-width:534px){
+  .About-Left-Container {
+  width: 60%;
+}
+}
+@media screen and (max-width:516px){
+  .About-Left-Container {
+  width: 62%;
+}
+}
+
+@media screen and (max-width:500px){
+.About-Left-Container {
+  width: 52%;
+  padding: 0px;
+}
+ .About-Right-Container {
+  width: 38%;
+}
+.About-Left-Container h1 {
+  font-size: 33px;
+}
+.About-Left-Container p {
+  font-size: 11px;
+}
+.ABL-a{
+  font-size: 8.5px;
+  padding-top: 30px;
+}
+}
+@media screen and (max-width:400px){
+  .About-Container {
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.About-Left-Container {
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+ .About-Right-Container {
+  width: 50%;
+}
+.About-Left-Container h1 {
+  font-size: 26px;
+  line-height: 65px;
+}
+.About-Left-Container p {
+  text-align: center;
+  justify-content: center;
+  font-size: 13.2px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.ABL-a{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  font-size: 13px;
+  align-items: center;
+}
+.ABL-a #ABL-aside{
+  width: 50%;
+  height: 40px;
+}
+}
+@media screen and (max-width:398px){
+.About-Left-Container {
+  width: 66%;
+}
+}
+@media screen and (max-width:392px){
+.About-Left-Container {
+  width: 67%;
+}
+}
+@media screen and (max-width:388px){
+.About-Left-Container {
+  width: 68%;
+}
+}
+@media screen and (max-width:380px){
+.About-Left-Container {
+  width: 69.5%;
+}
+}
+@media screen and (max-width:372px){
+.About-Left-Container {
+  width: 71%;
+}
+}
+@media screen and (max-width:364px){
+.About-Left-Container {
+  width: 72%;
+}
+}
+@media screen and (max-width:360px){
+.About-Left-Container {
+  width: 70%;
+}
+.About-Left-Container p {
+  text-align: center;
+  justify-content: center;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.About-Left-Container h1 {
+  font-size: 24.5px;
+  line-height: 65px;
+}
+ .About-Right-Container {
+  width: 47%;
+}
+}
+@media screen and (max-width:354px){
+.About-Left-Container {
+  width: 71.5%;
+}
+
+}
+@media screen and (max-width:346px){
+.About-Left-Container {
+  width: 73%;
+}
+
+}
+@media screen and (max-width:340px){
+.About-Left-Container {
+  width: 74%;
+}
+}
+@media screen and (max-width:334px){
+.About-Left-Container {
+  width: 75%;
+}
+}
+@media screen and (max-width:330px){
+.About-Left-Container {
+  width: 76.5%;
+}
+}
+@media screen and (max-width:324px){
+.About-Left-Container {
+  width: 77.5%;
+}
+}
+@media screen and (max-width:320px){
+.About-Left-Container {
+  width: 79%;
+}
+}
+@media screen and (max-width:314px){
+.About-Left-Container {
+  width: 80%;
+}
+}
+@media screen and (max-width:310px){
+.About-Left-Container {
+  width: 81.5%;
+}
+}
+@media screen and (max-width:306px){
+.About-Left-Container {
+  width: 82.7%;
+}
+}
 
 /* Section 2 Experience  */
 .Experience-Container{
   width: 100%;
-  margin: 150px auto;
+  margin: 200px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 110px;
+  gap: 240px;
   align-items: center;
+  overflow: auto;
 }
 
 /* exp left container  */
@@ -434,8 +626,72 @@ main {
 font-size: 50px;
 font-weight: 600;
 }
-
-
+/*  */
+@media screen and (max-width:1308px){
+  .Exp-Left-Container{
+  padding: 15px;
+}
+}
+@media screen and (max-width:1240px){
+  .Exp-Left-Container{
+  padding: 10px;
+}
+}
+@media screen and (max-width:1176px){
+  .Exp-Left-Container{
+  padding: 6px;
+}
+}
+@media screen and (max-width:1120px){
+  .Exp-Left-Container{
+  padding: 0px;
+}
+}
+@media screen and (max-width:1040px){
+  .Exp-Left-Container{
+  width: 16%;
+}
+}
+@media screen and (max-width:976px){
+  .Exp-Left-Container{
+  width: 18%;
+}
+}
+@media screen and (max-width:866px){
+  .Exp-Left-Container{
+  width: 20%;
+}
+}
+@media screen and (max-width:780px){
+  .Exp-Left-Container{
+  width: 22%;
+}
+}
+@media screen and (max-width:700px){
+  .Exp-Left-Container{
+  width: 20%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Exp-Left-Container p{
+  font-size: 13px;
+}
+.Exp-Left-Container h1{
+font-size: 55px;
+}
+}
+@media screen and (max-width:700px){
+  .Exp-Left-Container{
+  width: 25%;
+}
+.Exp-Left-Container p{
+  font-size: 15px;
+}
+.Exp-Left-Container h1{
+font-size: 60px;
+}
+}
 /* exp right container  */
 .Exp-Right-Container{
   width: 60%;
@@ -444,15 +700,11 @@ font-weight: 600;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
-  /* margin-right: -100px; */
-  overflow-x: scroll;
-    max-width: 100%;
-    overflow: hidden;
 }
 
 .Exp-Card{
   width: 32.2%;
-  height: 170px;
+  height: 180px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -478,6 +730,104 @@ font-weight: 700;
   background-color: #C2C2C2;
 }
 
+/*  */
+@media screen and (max-width:1174px){
+  .Experience-Container{
+  gap: 150px;
+}
+  .Exp-Right-Container{
+  width: 65%;
+  gap: 12px;
+}
+}
+@media screen and (max-width:1136px){
+  .Experience-Container{
+  gap: 95px;
+}
+  .Exp-Right-Container{
+  width: 70%;
+}
+}
+@media screen and (max-width:1040px){
+  .Experience-Container{
+  gap: 95px;
+}
+  .Exp-Right-Container{
+  width: 69%;
+}
+}
+@media screen and (max-width:1022px){
+  .Experience-Container{
+  gap: 90px;
+}
+  .Exp-Right-Container{
+  width: 70%;
+}
+}
+@media screen and (max-width:1006px){
+  .Experience-Container{
+  gap: 80px;
+}
+  .Exp-Right-Container{
+  width: 71%;
+}
+}
+@media screen and (max-width:1000px){
+    .Experience-Container{
+  gap: 90px;
+}
+ .Exp-Right-Container{
+  width: 70%;
+}
+
+.Exp-Card{
+  width: 31%;
+}
+}
+@media screen and (max-width:976px){
+    .Experience-Container{
+  gap: 70px;
+}
+}
+@media screen and (max-width:780px){
+    .Experience-Container{
+  gap: 35px;
+}
+.Exp-Right-Container{
+  width: 70%;
+  gap: 10px;
+}
+
+.Exp-Card{
+  width: 30%;
+  height: 150px;
+}
+}
+@media screen and (max-width:710px){
+    .Experience-Container{
+  gap: 10px;
+}
+}
+@media screen and (max-width:700px){
+   .Experience-Container{
+  margin: 150px auto;
+  flex-direction: column;
+  gap: 100px;
+}
+.Exp-Right-Container{
+  width: 95%;
+  height: 200px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: scroll;
+}
+
+.Exp-Card{
+  width: 35%;
+  height: 170px;
+}
+}
 
 /* section 3 machines  */
 .Machine-Container{
@@ -518,7 +868,9 @@ font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
 }
+
 
 .Tech-Content{
   width: 35%;
@@ -533,13 +885,16 @@ font-weight: 700;
 }
 
 .Technologies{
-  width: 100%;
+  max-width: 1600px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 50px;
+  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .Tech-card{
