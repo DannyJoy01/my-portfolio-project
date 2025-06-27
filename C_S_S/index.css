@@ -560,7 +560,7 @@ font-size: 16px;
 
 
 /* section 4 technologies  */
-.Technology-Container{
+.Technology-Container {
   width: 100%;
   gap: 100px;
   margin-top: 200px;
@@ -571,8 +571,7 @@ font-size: 16px;
   overflow: auto;
 }
 
-
-.Tech-Content{
+.Tech-Content {
   width: 42%;
   display: flex;
   flex-wrap: wrap;
@@ -580,50 +579,59 @@ font-size: 16px;
   text-align: center;
   color: #C8C8C8;
   font-family: Inter;
-font-weight: 400;
-font-size: 40px;
-text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
 }
+
 
 /*  */
 /*  */
-@media screen and (max-width:768px){
-.Tech-Content{
-  width: 58%;
+@media screen and (max-width: 768px) {
+  .Tech-Content {
+    width: 58%;
+  }
+  .Technology-Container {
+    margin-top: 160px;
+  }
 }
-.Technology-Container{
-  margin-top: 160px;
+@media screen and (max-width: 425px) {
+  .Tech-Content {
+    width: 85%;
+    font-weight: 500;
+    font-size: 35px;
+  }
+  .Technology-Container {
+    margin-top: 100px;
+  }
 }
 
-}
-@media screen and (max-width:425px){
-.Tech-Content{
-  width: 85%;
-  font-weight: 500;
-font-size: 35px;
-}
-.Technology-Container{
-  margin-top: 100px;
-}
-}
-
+/* Technologies container and cards */
 .Technologies {
   width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  align-items: start;
-  overflow-x: auto;  
+  overflow-x: auto;
   overflow-y: hidden;
   gap: 50px;
   scroll-behavior: smooth;
   white-space: nowrap;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;  
+  -ms-overflow-style: none;    
+}
+
+.Technologies::-webkit-scrollbar {
+  display: none;            
 }
 
 .Tech-card {
   flex: 0 0 auto;
-  width: 200px;    
+  width: 200px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -653,14 +661,16 @@ font-size: 35px;
   align-items: center;
 }
 
-.Technologies {
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE 10+ */
+/*  */
+/*  */
+@media screen and (max-width: 1024px) {
+  .Technologies {
+    justify-content: flex-start; 
+    padding-left: 20px;         
+    padding-right: 20px;         
+  }
 }
 
-.Technologies::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
-}
 
 
 
