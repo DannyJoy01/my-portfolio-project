@@ -333,23 +333,27 @@ font-size: 16px;
   width: 58%;
 }
 }
+/*  *//*  */
+/*end of media query  */ 
+/*  *//*  */
+/*  */
+
 
 
 /* Section 2 Experience  */
-.Experience-Container{
+.Experience-Container {
   width: 100%;
   margin: 200px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 180px;
+  gap: 100px;
   align-items: center;
-  overflow: auto;
 }
 
 /* exp left container  */
-.Exp-Left-Container{
+.Exp-Left-Container {
   width: 20%;
   padding: 20px;
   display: flex;
@@ -358,66 +362,32 @@ font-size: 16px;
   justify-content: center;
 }
 
-.Exp-Left-Container p{
+.Exp-Left-Container p {
   color: #6F6F6F;
   font-family: Raleway;
-font-weight: 700;
-font-size: 14px;
-
+  font-weight: 700;
+  font-size: 12px;
 }
-.Exp-Left-Container h1{
+
+.Exp-Left-Container h1 {
   color: #FFFFFF;
   font-family: Raleway;
-font-size: 50px;
-font-weight: 600;
+  font-size: 50px;
+  font-weight: 600;
 }
-/*  *//*  */
-/*  */
-
-
-@media screen and (max-width:425px){
-  .Experience-Container{
-  margin: 0px;
-}
-  .Exp-Left-Container{
-  width: 55%;
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-  .Exp-Left-Container h1{
-font-weight: 700;
-font-size: 80px;
-text-align: center;
-}
-.Exp-Left-Container p{
-font-size: 16px;
-}
-}
-
-@media screen and (max-width:425px){
- .Exp-Left-Container{
-  width: 60%;
-}
-
-}
-
 
 /* exp right container  */
-.Exp-Right-Container{
-  width: 60%;
+.Exp-Right-Container {
+  width: 62%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }
 
-.Exp-Card{
-  width: 32.2%;
-  height: 180px;
+.Exp-Card {
+  width: 35%;
+  height: 220px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -426,122 +396,139 @@ font-size: 16px;
   border-radius: 20px;
   background-color: rgba(195, 201, 158, 1);
 }
-.Exp-Card img{
+
+.Exp-Card img {
   width: 14%;
 }
-.Exp-Card p{
-font-family: Raleway;
-font-size: 13px;
-font-weight: 700;
+
+.Exp-Card p {
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 700;
 }
 
-#Exp-ecp{
+#Exp-ecp {
   background-color: #7D9CA5;
 }
 
-#Exp-ecp1{
+#Exp-ecp1 {
   background-color: #C2C2C2;
 }
 
+/* Media Queries */
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .Experience-Container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 60px;
+    margin: 120px auto;
+  }
+
+  .Exp-Left-Container {
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Exp-Left-Container h1 {
+    font-weight: 700;
+    font-size: 85px;
+    text-align: center;
+  }
+
+  .Exp-Left-Container p {
+    font-size: 17px;
+  }
+
+  /* Scroll-enabled Exp-Right-Container */
+  .Exp-Right-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;   
+    -ms-overflow-style: none;   
+  }
+
+  .Exp-Right-Container::-webkit-scrollbar {
+    display: none;       
+  }
+
+  .Exp-Card {
+    flex: 0 0 auto;
+    width: 37%;
+    height: 240px;
+  }
+}
+
+/* For screens 425px and below */
+@media screen and (max-width: 425px) {
+  .Experience-Container {
+    margin: 100px auto;
+  }
+
+  .Exp-Left-Container {
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Exp-Left-Container h1 {
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .Exp-Left-Container p {
+    font-size: 16px;
+  }
+
+  /* Scroll-enabled Exp-Right-Container for smaller phones */
+  .Exp-Right-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .Exp-Right-Container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Exp-Card {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+
 /*  */
-@media screen and (max-width:1174px){
-  .Experience-Container{
-  gap: 150px;
-}
-  .Exp-Right-Container{
-  width: 65%;
-  gap: 12px;
-}
-}
-@media screen and (max-width:1136px){
-  .Experience-Container{
-  gap: 95px;
-}
-  .Exp-Right-Container{
-  width: 70%;
-}
-}
-@media screen and (max-width:1040px){
-  .Experience-Container{
-  gap: 95px;
-}
-  .Exp-Right-Container{
-  width: 69%;
-}
-}
-@media screen and (max-width:1022px){
-  .Experience-Container{
-  gap: 90px;
-}
-  .Exp-Right-Container{
-  width: 70%;
-}
-}
-@media screen and (max-width:1006px){
-  .Experience-Container{
-  gap: 80px;
-}
-  .Exp-Right-Container{
-  width: 71%;
-}
-}
-@media screen and (max-width:1000px){
-    .Experience-Container{
-  gap: 90px;
-}
- .Exp-Right-Container{
-  width: 70%;
-}
-
-.Exp-Card{
-  width: 31%;
-}
-}
-@media screen and (max-width:976px){
-    .Experience-Container{
-  gap: 70px;
-}
-}
-@media screen and (max-width:780px){
-    .Experience-Container{
-  gap: 35px;
-}
-.Exp-Right-Container{
-  width: 70%;
-  gap: 10px;
-}
-
-.Exp-Card{
-  width: 30%;
-  height: 150px;
-}
-}
-@media screen and (max-width:710px){
-    .Experience-Container{
-  gap: 10px;
-}
-}
-@media screen and (max-width:700px){
-   .Experience-Container{
-  margin: 150px auto;
-  flex-direction: column;
-  gap: 100px;
-}
-.Exp-Right-Container{
-  width: 95%;
-  height: 200px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 12px;
-  overflow-x: scroll;
-}
-
-.Exp-Card{
-  width: 35%;
-  height: 170px;
-}
-}
-
 /* section 3 machines  */
 .Machine-Container{
   width: 100%;
@@ -576,42 +563,67 @@ font-weight: 700;
 .Technology-Container{
   width: 100%;
   gap: 100px;
-  margin: 80px auto;
   margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow: auto;
 }
 
 
 .Tech-Content{
-  width: 35%;
+  width: 42%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 150px;
+  text-align: center;
   color: #C8C8C8;
-  font-size: 32px;
-  font-weight: 350;
+  font-family: Inter;
+font-weight: 400;
+font-size: 40px;
+text-align: center;
 }
 
-.Technologies{
-  max-width: 1600px;
-  height: 350px;
+/*  */
+/*  */
+@media screen and (max-width:768px){
+.Tech-Content{
+  width: 58%;
+}
+.Technology-Container{
+  margin-top: 160px;
+}
+
+}
+@media screen and (max-width:425px){
+.Tech-Content{
+  width: 85%;
+  font-weight: 500;
+font-size: 35px;
+}
+.Technology-Container{
+  margin-top: 100px;
+}
+}
+
+.Technologies {
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
+  overflow-x: auto;  
+  overflow-y: hidden;
   gap: 50px;
-  overflow-x: scroll;
-  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
 }
 
-.Tech-card{
-  width: 15%;
+.Tech-card {
+  flex: 0 0 auto;
+  width: 200px;    
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -625,23 +637,35 @@ font-weight: 700;
   border: #272727 solid 1px;
 }
 
-.Tech-card img{
-   width: 15%;
-   height: 25px;
+.Tech-card img {
+  width: 27px;
+  height: 27px;
   padding: 4px;
   border-radius: 50%;
   background-color: #272727;
 }
 
-.Tech-img-icon{
-  width: 100%;
+.Tech-img-icon {
+  width: 180px;
   gap: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.Technologies {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
+}
 
+.Technologies::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
+
+
+/*  */
+/*  */
 /* my prject section */
 .my-project{
   width: 100%;
