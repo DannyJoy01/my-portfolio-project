@@ -378,13 +378,14 @@ main {
   width: 60%;
 }
 }
-
+/*  */
+/*  */
 
 
 /* project 1 section 2 */
 .Projects {
   margin: 150px auto;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,14 +394,14 @@ main {
 }
 
 .Project1-Container {
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: rgba(19, 19, 19, 1);
-  padding: 40px;
+  padding: 60px;
   border-radius: 50px;
 }
 
@@ -410,72 +411,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
   gap: 5px;
 }
-
-/*  */
-@media screen and (max-width: 1100px) {
- .Project-Content1 {
-  width: 40%;
-}
-.Project-Content2 {
-  width: 50%;
-}
-}
-
-@media screen and (max-width: 900px) {
-
-   .Project-Content1 {
-  width: 56%;
-}
-  .Project1-Container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-}
-}
-
-@media screen and (max-width: 700px) {
-   .Project-Content1 {
-  width: 57%;
-}
-}
-
-@media screen and (max-width: 691px) {
-   .Project-Content1 {
-  width: 58%;
-  margin-left: 12px;
-}
-
-}
-
-@media screen and (max-width: 681px) {
-   .Project-Content1 {
-  width: 59%;
-}
-}
-
-@media screen and (max-width: 670px) {
-   .Project-Content1 {
-  width: 60%;
-}
-}
-
-@media screen and (max-width: 661px) {
-   .Project-Content1 {
-  width: 70%;
-  margin-left: 50px;
-}
-}
-@media screen and (max-width: 583px) {
-   .Project-Content1 {
-  width: 80%;
-  margin-left: 80px;
-}
-}
-
 
 .Project-Content1 h3 {
   font-family: Raleway;
@@ -502,14 +440,16 @@ main {
 }
 
 .Project-Content1 img {
-  width: 1.5%;
+  width: 3px;
   height: 4px;
 }
+
 .Project-Content2 {
-  width: 56%;
+  width: 65%;
   gap: 20px;
   color: white;
   display: flex;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
 }
@@ -528,6 +468,72 @@ main {
   line-height: 23px;
   color: rgba(111, 111, 111, 1);
 }
+
+/* RESPONSIVE ONLY WIDTH FIX */
+@media screen and (max-width: 768px) {
+  .Projects {
+    gap: 50px;
+  }
+
+  .Project1-Container {
+    width: 90%;
+    padding: 35px;
+  }
+  .Project-Content1 {
+  width: 45%;
+}
+
+  /* ✅ Width fix only */
+  .Project-Content2 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Project1-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .Project-Content1 {
+    width: 100%;
+  }
+  .Project-Content1 h3 {
+  font-size: 20px;
+}
+
+.Project-Content1 h4 {
+  font-size: 16px;
+}
+
+.Project-Content1 p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/*  */
+  .Project-Content2 {
+    width: 100%;
+  }
+  .Project-Content2 h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Project-Content2 p {
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+}
+
+}
+
 
 /* footer section */
 .footer-container {
